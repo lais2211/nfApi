@@ -46,7 +46,7 @@ public class MainController {
         return service.statusAtualEstado(estado);
     }
 
-    @PostMapping("/Data")
+    @PostMapping("/data")
     public List<MainEntity> data(@RequestBody DataDto data) {
 
         return service.data(data);
