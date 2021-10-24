@@ -28,11 +28,6 @@ public class MainController {
         return service.todosStatus();
     }
 
-    @GetMapping(value = "/deletarTudo")
-    public ResponseEntity<String> deletarTudo() {
-
-        return service.deletarTudo();
-    }
 
     @GetMapping(value = "/statusAtual")
     public List<MainEntity> statusAtual() {

@@ -63,14 +63,6 @@ public class MainService {
 
     }
 
-    public ResponseEntity <String> deletarTudo() {
-
-        ResponseEntity<String> response = new ResponseEntity<String>(HttpStatus.OK);
-        repository.deleteAll();
-        return response;
-
-    }
-
     public List<MainEntity> statusAtual(){
 
         return repository.findTop15ByOrderByDataDesc();
