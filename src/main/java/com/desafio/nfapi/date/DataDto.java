@@ -17,7 +17,7 @@ import java.time.LocalDate;
 @Setter
 public class DataDto {
 
-    static final String DATE_PATTERN = "dd-MM-yyyy";
+    static final String DATE_PATTERN = "dd/MM/yyyy";
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = DATE_PATTERN)
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     @JsonSerialize(using = LocalDateSerializer.class)
