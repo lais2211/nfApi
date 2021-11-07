@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class SwaggerController {
 
     @RequestMapping(value = "/custom", method = RequestMethod.POST)
-    public String custom() {
-        return "custom";
+    public Integer custom() {
+        return 1;
     }
 }
 
